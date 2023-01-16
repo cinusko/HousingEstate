@@ -10,6 +10,10 @@ namespace HousingEstate
     {
         static void Main(string[] args)
         {
+            Person person1 = new Person("Ľudovít", "Štúr", 75);
+
+            Console.WriteLine(person1.ToString());
+
         }
     }
 }
