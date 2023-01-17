@@ -20,7 +20,7 @@ namespace HousingEstate
             this.surname = surname;
             this.age = age;
         }
-        
+
         public string Name
         {
             get { return name; }
@@ -40,7 +40,7 @@ namespace HousingEstate
 
         public override string ToString()
         {
-            return this.Name + " " + this.Surname + " " + this.Age;
+            return this.Name + " " + this.Surname + " " + this.Age; 
         }
 
     }
