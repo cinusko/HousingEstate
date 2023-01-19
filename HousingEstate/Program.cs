@@ -12,7 +12,11 @@ namespace HousingEstate
         {
             Person person1 = new Person("Ľudovít", "Štúr", 75);
 
+            Flat flat1 = new Flat(10, 12, 6);
+
             Console.WriteLine(person1.ToString());
+
+            Console.WriteLine(flat1.ToString());
 
         }
     }

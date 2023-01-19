@@ -13,6 +13,8 @@ namespace HousingEstate
         private int area;
         private int rooms;
 
+*
+
         public Flat(int flatNum, int area, int rooms)
         {
             this.flatNum = flatNum;
@@ -36,6 +38,15 @@ namespace HousingEstate
         {
             get { return rooms; }
             set { rooms = value; }
+        }
+
+        List<Person> persons = new List<Person>();
+
+
+
+        public override string ToString()
+        {
+            return "Flat number: " + this.FlatNum + "\nArea of this flat is " + this.Area + "\nThere are " + this.Rooms + " rooms";
         }
     }
 }
