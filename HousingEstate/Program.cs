@@ -10,13 +10,25 @@ namespace HousingEstate
     {
         static void Main(string[] args)
         {
-            Person person1 = new Person("Ľudovít", "Štúr", 75);
+            Person peter = new Person("Peter", "Zelina", 43);
+            Person miro = new Person("Miroslav", "Drigel", 44);
+            Person janko = new Person("Jano", "Kanak", 56);
 
-            Flat flat1 = new Flat(10, 12, 6);
+            Flat bytík = new Flat(10, 12, 6);
 
-            Console.WriteLine(person1.ToString());
+            bytík.AddHabitant(peter);
+            bytík.AddHabitant(janko);
+            bytík.AddHabitant(miro);
 
-            Console.WriteLine(flat1.ToString());
+            //Console.WriteLine(peter.ToString());
+
+            Console.WriteLine(bytík.ToString());
+
+            foreach (var persons in bytík.persons)
+            {
+                Console.WriteLine(persons.ToString());
+            }
+            
 
         }
     }
